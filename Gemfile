@@ -1,41 +1,75 @@
+# Settings
+# ========
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+# Rails
+# =====
+gem 'rails', '~> 3.1.0.rc'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+# Database
+gem 'sqlite3'
 gem 'mysql2'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails', "~> 3.1.0.rc"
-  gem 'coffee-rails', "~> 3.1.0.rc"
+  gem 'sprockets', :git => 'git://github.com/sstephenson/sprockets.git'
+  # gem 'coffee-rails', "~> 3.1.0.rc"
+  gem 'therubyracer'
   gem 'uglifier'
+  gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
+  gem 'fancy-buttons'
 end
 
-gem 'jquery-rails'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+# Development
+# ===========
+group :development do
+  # Haml generators
+  gem 'hpricot'
+  gem 'ruby_parser'
+  gem 'rcov'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+  # Deployment
+  gem 'capones_recipes', :git => 'git://github.com/raskhadafi/capones_recipes.git'
+end
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
+# Test
+# ====
 group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
+  # Matchers/Helpers
+  gem 'shoulda'
+
+  # Mocking
+  # gem 'mocha'
+
+  # Browser
+  gem 'capybara'
+
+  # Autotest
+  gem 'autotest'
+  gem 'autotest-rails'
+  gem 'ZenTest', '< 4.6.0' # Keep it working with gems < 1.8
+end
+
+group :test, :development do
+  # Framework
+  gem "rspec"
+  gem 'rspec-rails'
+
+  # Fixtures
+  gem "factory_girl_rails", "~> 1.1.rc1"
+  gem "factory_girl", "~> 2.0.0.rc1"
+
+  # Integration
+  # gem 'cucumber-rails'
+  # gem 'cucumber'
+
+  # Generators
+  gem 'rails3-generators'
 end
 
 gem 'haml'
-gem 'kuhsaft'
-gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
-
-group :development do
-  gem 'capones_recipes'
-end
+gem 'haml-rails'
+gem 'kuhsaft', :git => 'git://github.com/screenconcept/kuhsaft.git', :branch => 'rails31'
