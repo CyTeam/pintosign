@@ -2,9 +2,9 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-# If you have a Gemfile, require the default gems, the ones in the
-# current environment and also include :assets gems if in development
-# or test environments.
+# If you have a Gemfile, require the gems listed there, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(:default, Rails.env) if defined?(Bundler)
 Bundler.require *Rails.groups(:assets) if defined?(Bundler)
 
 module Pintosign
@@ -25,11 +25,19 @@ module Pintosign
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
+    config.time_zone = 'Bern'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.fallbacks = [:'de-CH', :de]
+    config.i18n.default_locale = 'de-CH'
+
+    config.sass.preferred_syntax = :sass
+    # Configure generators values. Many other options are available, be sure to check the documentation.
+    config.generators do |g|
+      g.stylesheets false
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl
+    end
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -38,6 +46,10 @@ module Pintosign
     config.filter_parameters += [:password]
 
     # Enable the asset pipeline
-    config.assets.enabled = true
+    # config.assets.enabled = true
+    # Google analytics middle ware.
+    if Rails.env == "production"
+      config.middleware.use("Rack::GoogleAnalytics", :web_property_id => '') # Cause in the end the code is public viewble. I added it hardcoded.
+    end
   end
 end
