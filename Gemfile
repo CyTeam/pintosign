@@ -34,3 +34,8 @@ end
 
 gem 'haml'
 gem 'kuhsaft'
+gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
+
+group :development do
+  gem 'capones_recipes'
+end
