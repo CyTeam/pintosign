@@ -31,12 +31,10 @@ module Pintosign
     config.i18n.fallbacks = [:'de-CH', :de]
     config.i18n.default_locale = 'de-CH'
 
-    config.sass.preferred_syntax = :sass
     # Configure generators values. Many other options are available, be sure to check the documentation.
     config.generators do |g|
       g.stylesheets false
-      g.test_framework :rspec
-      g.fixture_replacement :factory_girl
+      g.stylesheet_engine = :sass
     end
 
     # Configure the default encoding used in templates for Ruby 1.9.
@@ -46,7 +44,7 @@ module Pintosign
     config.filter_parameters += [:password]
 
     # Enable the asset pipeline
-    # config.assets.enabled = true
+    config.assets.enabled = true
     # Google analytics middle ware.
     if Rails.env == "production"
       config.middleware.use("Rack::GoogleAnalytics", :web_property_id => '') # Cause in the end the code is public viewble. I added it hardcoded.

@@ -1,0 +1,81 @@
+@import 'base/variables'
+@import 'base/default_imports'
+@import 'base/mixins'
+
+$color_white: #FFFFFF
+$color_violet: #8A748C
+$color_orange: #EA876C
+
+$normal: $color_violet
+$hover: $color_orange
+
+body#pinto_sign
+  background-color: $color_white
+  align: left
+  text-align: left
+  margin-top: 95px
+
+  #navigation,
+  #content
+    +column(10)
+    width: 100%
+
+  #content > *
+    margin-left: 45px
+  #content
+    color: $color_violet
+    font-family: 'Century Gothic', sans-serif
+    font-size: 22px
+    line-height: 1.3em
+    h1
+      font-weight: 150
+      font-size: 32px
+      margin-bottom: 30px
+    ul
+      +no-bullets
+    p img
+      float: left
+      margin-right: 40px
+
+  #navigation
+    height: 95px
+    margin-bottom: 75px
+    ul
+      +horizontal_list
+      padding-left: 40px
+      border-bottom: 3px solid $color_orange
+      li
+        margin-right: 50px
+        a
+          +hover-link
+          +link-colors($normal, $hover)
+          display: block
+          font-size: 32px
+          line-height: 46px
+          font-family: 'PT Sans Narrow', sans-serif
+          &.active
+            color: $hover
+        ul
+          position: absolute
+          left: 0
+          border-bottom: none
+          &#liveart_children
+            left: 48px
+          &#art_children
+            left: 178px
+          li
+            margin-right: 25px
+
+  #cirle.orange
+    display: block
+    background-color: $color_orange
+    width: 30px
+    height: 30px
+    +border-radius(15px)
+    position: relative
+    top: -17px
+
+  #pinto-overview-navigation
+    position: relative
+    margin-left: 50%
+    left: -236px
