@@ -13,6 +13,10 @@ require 'capistrano/ext/multistage'
 set :server, :passenger
 set :user, "deployer"                               # The server's user for deploys
 
+# Sync directories
+set :sync_directories, ["public/uploads"]
+set :sync_backups, 3
+
 # Configuration
 set :scm, :git
 ssh_options[:forward_agent] = true
