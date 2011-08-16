@@ -30,10 +30,14 @@ GEM
       activesupport (= 3.1.0.rc5)
     activesupport (3.1.0.rc5)
       multi_json (~> 1.0)
+    acts-as-taggable-on (2.0.6)
     ansi (1.3.0)
     arel (2.1.4)
     bcrypt-ruby (2.1.4)
     builder (3.0.0)
+    carrierwave (0.5.2)
+      activesupport (~> 3.0)
+    chunky_png (1.2.1)
     coffee-rails (3.1.0.rc.5)
       actionpack (~> 3.1.0.rc1)
       coffee-script (>= 2.2.0)
@@ -43,14 +47,29 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.1.2)
+    compass (0.11.5)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
     erubis (2.7.0)
     execjs (1.2.4)
       multi_json (~> 1.0)
+    fssm (0.2.7)
+    haml (3.1.2)
     hike (1.2.0)
     i18n (0.6.0)
     jquery-rails (1.0.13)
       railties (~> 3.0)
       thor (~> 0.14)
+    kuhsaft (0.3.1)
+      acts-as-taggable-on (= 2.0.6)
+      carrierwave (= 0.5.2)
+      compass (>= 0.11.1)
+      haml (~> 3.1)
+      rails (~> 3.0)
+      rdiscount
+      rmagick (= 2.12.2)
+      simple_form
     mail (2.3.0)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -84,13 +103,18 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.6)
     rake (0.9.2)
+    rdiscount (1.6.8)
     rdoc (3.9.2)
+    rmagick (2.12.2)
     sass (3.1.7)
     sass-rails (3.1.0.rc.5)
       actionpack (~> 3.1.0.rc1)
       railties (~> 3.1.0.rc1)
       sass (>= 3.1.4)
       sprockets (>= 2.0.0.beta.9)
+    simple_form (1.4.2)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sprockets (2.0.0.beta.13)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -112,7 +136,9 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
+  haml
   jquery-rails
+  kuhsaft
   mysql2
   rails (= 3.1.0.rc5)
   sass-rails (~> 3.1.0.rc)
