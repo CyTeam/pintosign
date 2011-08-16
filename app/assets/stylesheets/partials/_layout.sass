@@ -1,0 +1,67 @@
+// WikiSigns Layout
+// ================
+
+// Forms
+textarea, input
+  color: #6E6E6E
+  +box-shadow(rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset)
+  background: #202020
+  background-color: rgba(0, 0, 0, 0.3)
+  +border-radius(4px)
+
+// Helpers
+@mixin containers
+  background: rgba(255, 255, 255, 0.06)
+  border-color: rgba(0, 0, 0, 0.5)
+  border: 1px solid
+  +border-radius(4px)
+  padding: 8px
+  margin: 12px
+
+// Structural Elements
+body
+  font-family: verdana, arial, helvetica, sans-serif
+  font-size: 13px
+  line-height: 1.5em
+  align: center
+  text-align: center
+  background-color: #2F2F2F
+
+#container
+  +container
+  margin: 3em
+
+#menu-container
+  +column(5)
+
+#main-menu
+  min-height: 20em
+  +containers
+
+#context-menu
+  +containers
+  min-height: 26em
+
+#main-container
+  +column(10)
+
+#main-control
+  min-height: 6em
+  +containers
+
+#main-sign
+  +containers
+  min-height: 40em
+
+#flow-container
+  +column(5)
+  +last
+
+#flow-menu
+  +containers
+  min-height: 6em
+
+#side-bar
+  +containers
+  min-height: 40em
+  height: 40em
