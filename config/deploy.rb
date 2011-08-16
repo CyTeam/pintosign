@@ -1,4 +1,4 @@
-require 'cookbook/wikisigns'
+require 'cookbook/rails31'
 
 #Application
 set :application, "pintosign"
