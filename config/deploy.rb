@@ -1,4 +1,5 @@
 require 'cookbook/rails31'
+require 'recipes/database'
 
 #Application
 set :application, "pintosign"
