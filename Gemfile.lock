@@ -33,15 +33,6 @@ GIT
       rmagick (= 2.12.2)
       simple_form
 
-GIT
-  remote: git://github.com/sstephenson/sprockets.git
-  revision: 6cde11e60a78a58804ef01772fc9349c4e6daead
-  specs:
-    sprockets (2.0.0.beta.13)
-      hike (~> 1.2)
-      rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -215,6 +206,10 @@ GEM
     simple_form (1.4.2)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
+    sprockets (2.0.0.beta.13)
+      hike (~> 1.2)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.4)
     therubyracer (0.9.3)
       libv8 (~> 3.3.10)
@@ -258,7 +253,7 @@ DEPENDENCIES
   ruby_parser
   sass-rails (~> 3.1.0.rc)
   shoulda
-  sprockets!
+  sprockets (~> 2.0.0.beta)
   sqlite3
   therubyracer
   uglifier
