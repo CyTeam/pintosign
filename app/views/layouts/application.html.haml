@@ -6,7 +6,10 @@
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
 
-    %title= t('pintosign.title')
+    %title
+      - if @page
+        = @page.title + " | "
+      = t('pintosign.title')
     = stylesheet_link_tag 'screen', 'pintosign', :media => 'screen, projection, print', :cache => 'application'
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700'
     = csrf_meta_tag
