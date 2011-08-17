@@ -11,8 +11,8 @@
         = @page.title + " | "
       = t('pintosign.title')
     = stylesheet_link_tag 'screen', 'pintosign', :media => 'screen, projection, print', :cache => 'application'
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700'
     = csrf_meta_tag
+    = javascript_include_tag 'application', 'cufon-yui', 'Ashby_700.font', 'cufon'
 
   %body#pinto_sign
     <!-- Main Content -->
@@ -32,5 +32,4 @@
 
       #content
         = yield
-    <!-- JavaScript at the bottom for fast page loading -->
-    = javascript_include_tag 'application'
+
