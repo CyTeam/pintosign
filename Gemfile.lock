@@ -105,6 +105,10 @@ GEM
     childprocess (0.2.1)
       ffi (~> 1.0.6)
     chunky_png (1.2.1)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.1.2)
     diff-lcs (1.1.2)
     erubis (2.7.0)
     execjs (1.2.4)
@@ -127,6 +131,9 @@ GEM
     hike (1.2.0)
     hpricot (0.8.4)
     i18n (0.6.0)
+    jquery-rails (1.0.13)
+      railties (~> 3.0)
+      thor (~> 0.14)
     json_pure (1.5.3)
     libv8 (3.3.10.2)
     mail (2.3.0)
@@ -232,6 +239,7 @@ DEPENDENCIES
   autotest-rails
   capones_recipes!
   capybara
+  coffee-script
   compass!
   factory_girl (~> 2.0.0.rc1)
   factory_girl_rails (~> 1.1.rc1)
@@ -239,6 +247,7 @@ DEPENDENCIES
   haml
   haml-rails
   hpricot
+  jquery-rails
   kuhsaft!
   mysql2
   rails (~> 3.1.0.rc)
