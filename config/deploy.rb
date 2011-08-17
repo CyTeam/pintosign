@@ -1,6 +1,7 @@
-require 'cookbook/rails31'
-require 'recipes/database'
+require 'recipes/rails'
+require 'recipes/rails31'
 require 'recipes/kuhsaft'
+require 'recipes/database/sync'
 
 #Application
 set :application, "pintosign"
