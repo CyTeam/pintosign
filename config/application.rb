@@ -46,8 +46,8 @@ module Pintosign
     # Enable the asset pipeline
     config.assets.enabled = true
     # Google analytics middle ware.
-    if Rails.env == "production"
-      config.middleware.use("Rack::GoogleAnalytics", :web_property_id => 'UA-20112140-5') # Cause in the end the code is public viewble. I added it hardcoded.
-    end
+#    if Rails.env == "production"
+#      config.middleware.use("Rack::GoogleAnalytics", :web_property_id => 'UA-20112140-5') # Cause in the end the code is public viewble. I added it hardcoded.
+#    end
   end
 end
