@@ -3,7 +3,7 @@ module WelcomeHelper
     [
       {:href => cms_slug_prefix + 'liveart/liveart-ankenwaage', :coords => '176,0,265,28', :title => 'liveart'},
       {:href => cms_slug_prefix + 'art/sonnwende', :coords => '342,25,488,54', :title => 'art collection'},
-      {:href => cms_slug_prefix + 'sonstiges', :coords => '155,213,265,241', :title => 'sonstiges'},
+      {:href => cms_slug_prefix + 'sonstiges/presse', :coords => '155,213,265,241', :title => 'sonstiges'},
       {:href => cms_slug_prefix + 'biographie', :coords => '401,222,521,248', :title => 'biographie'}
     ]
   end
