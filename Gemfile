@@ -75,4 +75,4 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'coffee-script'
 
-gem 'kuhsaft', :git => 'git://github.com/screenconcept/kuhsaft.git', :branch => 'rails31'
+gem 'kuhsaft', :git => 'git://github.com/CyTeam/kuhsaft.git', :branch => 'rails31'
