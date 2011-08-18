@@ -28,7 +28,7 @@ module Pintosign
     config.time_zone = 'Bern'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    config.i18n.fallbacks = [:'de-CH', :de]
+    config.i18n.fallbacks = [:'de-CH', :de, :en]
     config.i18n.default_locale = 'de-CH'
 
     # Configure generators values. Many other options are available, be sure to check the documentation.
