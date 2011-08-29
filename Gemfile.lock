@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CyTeam/kuhsaft.git
-  revision: af13423e4072a08288239800054ee4300a2382ce
+  revision: 8e1618a5c4a6d93b803eec62b5da30e909049eba
   branch: rails31
   specs:
     kuhsaft (0.3.1)
@@ -205,7 +205,7 @@ GEM
     sprockets (2.0.0.beta.15)
       hike (~> 1.2)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
+      tilt (!= 1.3.0, ~> 1.1)
     sqlite3 (1.3.4)
     therubyracer (0.9.3)
       libv8 (~> 3.3.10)
