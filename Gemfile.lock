@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CyTeam/kuhsaft.git
-  revision: 3d1735db070b8f64e155b62053fa67eeb50ba76b
+  revision: b7fe032bc0509a3fe523c25584cbb8bf232fff52
   branch: rails31
   specs:
     kuhsaft (0.3.1)
@@ -11,6 +11,7 @@ GIT
       rails (~> 3.0)
       rdiscount
       rmagick (= 2.12.2)
+      sass (~> 3.1)
       simple_form
 
 GIT
