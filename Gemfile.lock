@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CyTeam/kuhsaft.git
-  revision: 8e1618a5c4a6d93b803eec62b5da30e909049eba
+  revision: 860e9e576efaeb6f8195bf19048f786bf4a086f0
   branch: rails31
   specs:
     kuhsaft (0.3.1)
