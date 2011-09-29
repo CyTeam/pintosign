@@ -10,8 +10,7 @@
       - if @page
         = @page.title + " | "
       = t('pintosign.title')
-    = stylesheet_link_tag 'screen', 'pintosign', :media => 'screen, projection, print', :cache => 'application'
-    = csrf_meta_tag
+    = stylesheet_link_tag 'screen', 'pintosign', :media => 'screen, projection, print'
     = javascript_include_tag 'application', 'cufon-yui', 'Ashby_700.font', 'cufon'
 
   %body#pinto_sign
