@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 # Rails
 # =====
-gem 'rails', '~> 3.1.0.rc'
+gem 'rails', "~> 3.1.0"
 
 # Database
 gem 'sqlite3'
@@ -18,7 +18,7 @@ group :assets do
   # gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'therubyracer'
   gem 'uglifier'
-  gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
+  gem 'compass', "~> 0.12.alpha.0"
   gem 'fancy-buttons'
 end
 
@@ -32,7 +32,7 @@ group :development do
   gem 'rcov'
 
   # Deployment
-  gem 'capones_recipes'
+  gem 'capones_recipes', '0.14.3'
 end
 
 # Test
@@ -75,7 +75,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'coffee-script'
 
-gem 'kuhsaft', :git => 'git://github.com/CyTeam/kuhsaft.git', :branch => 'rails31'
+gem 'kuhsaft'
 
 # Monitoring
 # ==========
