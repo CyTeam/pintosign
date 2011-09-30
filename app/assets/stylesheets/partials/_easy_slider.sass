@@ -1,0 +1,90 @@
+// image replacement
+
+.graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next
+  margin: 0
+  padding: 0
+  display: block
+  overflow: hidden
+  text-indent: -8000px
+
+// image replacement
+
+
+// Easy Slider
+#slider
+  ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+    img
+      float: left
+      margin:
+        right: 20px
+
+#slider2
+  ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+  margin-top: 1em
+
+#slider li, #slider2 li
+  width: 935px
+  height: 320px
+  overflow: hidden
+
+#prevBtn, #nextBtn, #slider1next, #slider1prev
+  display: block
+  width: 40px
+  height: 40px
+  position: relative
+  left: -45px
+  top: -180px
+  z-index: 1000
+
+#nextBtn, #slider1next
+  left: 935px
+  top: -220px
+
+#prevBtn a, #nextBtn a, #slider1next a, #slider1prev a
+  display: block
+  position: relative
+  width: 40px
+  height: 77px
+  background: url("/assets/btn_prev.png") no-repeat 0 0
+
+#nextBtn a, #slider1next a
+  background: url("/assets/btn_next.png") no-repeat 0 0
+
+// numeric controls
+
+ol#controls
+  margin: 1em 0
+  padding: 0
+  height: 28px
+  li
+    margin: 0 10px 0 0
+    padding: 0
+    float: left
+    list-style: none
+    height: 28px
+    line-height: 28px
+    a
+      float: left
+      height: 28px
+      line-height: 28px
+      border: 1px solid #ccc
+      background: #DAF3F8
+      color: #555
+      padding: 0 10px
+      text-decoration: none
+    &.current a
+      background: #5DC9E1
+      color: #fff
+    a:focus
+      outline: none
+
+#prevBtn a:focus, #nextBtn a:focus
+  outline: none
+
+// Easy Slider
