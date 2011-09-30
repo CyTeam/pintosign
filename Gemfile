@@ -20,6 +20,8 @@ group :assets do
   gem 'fancy-buttons'
 end
 
+gem 'execjs'
+gem 'therubyracer'
 
 # Development
 # ===========
