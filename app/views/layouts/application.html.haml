@@ -25,7 +25,7 @@
           %ul
             - @pages.each do |page|
               %li
-                = link_to page.title, page.link, :class => "#{(current_page == page or current_page.parent_pages.include?page) ? 'active' : ''}"
+                = link_to page.title, page.link, :class => "#{(current_page == page or current_page.parent_pages.include?page) ? 'active' : ''}", :id => page.slug
                 - if (page == current_page or current_page.parent_pages.include?page) && !page.childs.empty?
                   %ul{:id => "#{page.slug}_children"}
                     - page.childs.each do |child|
