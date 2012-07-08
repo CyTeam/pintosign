@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $(".galery li a").fancybox();
+  $(".galery li a, #potz1000 a").fancybox();
 });
