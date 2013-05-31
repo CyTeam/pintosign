@@ -7,7 +7,6 @@ source 'http://rubygems.org'
 gem 'rails', "~> 3.1.0"
 
 # Database
-gem 'sqlite3'
 gem 'mysql2'
 
 # Gems used only for assets and not required
@@ -35,37 +34,8 @@ group :development do
   gem 'capones_recipes', '0.14.3'
 end
 
-# Test
-# ====
-group :test do
-  # Matchers/Helpers
-  gem 'shoulda'
-
-  # Mocking
-  # gem 'mocha'
-
-  # Browser
-  gem 'capybara'
-
-  # Autotest
-  gem 'autotest'
-  gem 'autotest-rails'
-  gem 'ZenTest', '< 4.6.0' # Keep it working with gems < 1.8
-end
 
 group :test, :development do
-  # Framework
-  gem "rspec"
-  gem 'rspec-rails'
-
-  # Fixtures
-  gem "factory_girl_rails", "~> 1.1.rc1"
-  gem "factory_girl", "~> 2.0.0.rc1"
-
-  # Integration
-  # gem 'cucumber-rails'
-  # gem 'cucumber'
-
   # Generators
   gem 'rails3-generators'
 end

@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    ZenTest (4.5.0)
     actionmailer (3.1.0)
       actionpack (= 3.1.0)
       mail (~> 2.3.0)
@@ -34,10 +33,6 @@ GEM
     acts-as-taggable-on (2.1.1)
       rails
     arel (2.2.1)
-    autotest (4.4.6)
-      ZenTest (>= 4.4.1)
-    autotest-rails (4.1.1)
-      ZenTest (= 4.5)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     cap-recipes (0.3.36)
@@ -55,17 +50,8 @@ GEM
       capistrano
       capistrano-ext
       capistrano_colors
-    capybara (1.1.1)
-      mime-types (>= 1.16)
-      nokogiri (>= 1.3.3)
-      rack (>= 1.0.0)
-      rack-test (>= 0.5.4)
-      selenium-webdriver (~> 2.0)
-      xpath (~> 0.1.4)
     carrierwave (0.5.7)
       activesupport (~> 3.0)
-    childprocess (0.2.2)
-      ffi (~> 1.0.6)
     chunky_png (1.2.5)
     coffee-rails (3.1.1)
       coffee-script (>= 2.2.0)
@@ -78,17 +64,11 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.2.9)
       multi_json (~> 1.0)
-    factory_girl (2.0.5)
-    factory_girl_rails (1.1.0)
-      factory_girl (~> 2.0.0)
-      railties (>= 3.0.0)
     fancy-buttons (1.1.2)
       compass (>= 0.11)
-    ffi (1.0.9)
     fssm (0.2.7)
     haml (3.1.3)
     haml-rails (0.3.4)
@@ -103,7 +83,6 @@ GEM
     jquery-rails (1.0.14)
       railties (~> 3.0)
       thor (~> 0.14)
-    json_pure (1.6.1)
     kuhsaft (0.3.2)
       acts-as-taggable-on (>= 2.0.6)
       carrierwave (>= 0.5.7)
@@ -128,7 +107,6 @@ GEM
     net-ssh (2.2.1)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
-    nokogiri (1.5.0)
     polyglot (0.3.2)
     rack (1.3.3)
     rack-cache (1.0.3)
@@ -163,22 +141,8 @@ GEM
     rdiscount (1.6.8)
     rdoc (3.9.4)
     rmagick (2.12.2)
-    rspec (2.6.0)
-      rspec-core (~> 2.6.0)
-      rspec-expectations (~> 2.6.0)
-      rspec-mocks (~> 2.6.0)
-    rspec-core (2.6.4)
-    rspec-expectations (2.6.0)
-      diff-lcs (~> 1.1.2)
-    rspec-mocks (2.6.0)
-    rspec-rails (2.6.1)
-      actionpack (~> 3.0)
-      activesupport (~> 3.0)
-      railties (~> 3.0)
-      rspec (~> 2.6.0)
     ruby_parser (2.3.1)
       sexp_processor (~> 3.0)
-    rubyzip (0.9.4)
     sass (3.1.7)
     sass-rails (3.1.3)
       actionpack (~> 3.1.0)
@@ -186,13 +150,7 @@ GEM
       sass (>= 3.1.4)
       sprockets (~> 2.0.0)
       tilt (~> 1.3.2)
-    selenium-webdriver (2.7.0)
-      childprocess (>= 0.2.1)
-      ffi (>= 1.0.7)
-      json_pure
-      rubyzip
     sexp_processor (3.0.7)
-    shoulda (2.11.3)
     simple_form (1.5.2)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -200,7 +158,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.4)
     therubyracer (0.9.4)
       libv8 (~> 3.3.10)
     thor (0.14.6)
@@ -212,24 +169,16 @@ GEM
     uglifier (1.0.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    xpath (0.1.4)
-      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  ZenTest (< 4.6.0)
-  autotest
-  autotest-rails
   capones_recipes (= 0.14.3)
-  capybara
   coffee-rails (~> 3.1.0)
   coffee-script
   compass (~> 0.12.alpha.0)
   execjs
-  factory_girl (~> 2.0.0.rc1)
-  factory_girl_rails (~> 1.1.rc1)
   fancy-buttons
   haml
   haml-rails
@@ -241,11 +190,7 @@ DEPENDENCIES
   rails (~> 3.1.0)
   rails3-generators
   rcov
-  rspec
-  rspec-rails
   ruby_parser
   sass-rails (~> 3.1.0)
-  shoulda
-  sqlite3
   therubyracer
   uglifier (>= 1.0.3)
