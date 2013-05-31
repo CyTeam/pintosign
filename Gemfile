@@ -28,7 +28,6 @@ group :development do
   # Haml generators
   gem 'hpricot'
   gem 'ruby_parser'
-  gem 'rcov'
 
   # Deployment
   gem 'capones_recipes', '0.14.3'
