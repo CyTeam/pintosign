@@ -143,6 +143,8 @@ GEM
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
     sexp_processor (4.4.4)
+    simple-navigation (3.13.0)
+      activesupport (>= 2.3.2)
     simple_form (3.0.2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -195,6 +197,7 @@ DEPENDENCIES
   rails3-generators
   ruby_parser
   sass-rails
+  simple-navigation
   slim
   therubyracer
   uglifier (>= 1.0.3)

@@ -46,6 +46,7 @@ gem 'jquery-rails'
 gem 'coffee-script'
 
 gem 'kuhsaft'
+gem 'simple-navigation'
 
 # Monitoring
 # ==========
