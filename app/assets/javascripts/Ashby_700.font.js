@@ -1,6 +1,6 @@
 /*!
  * The following copyright notice may not be removed under any circumstances.
- * 
+ *
  * Copyright:
  *   2000-2001, Robby Woodard. All rights reserved. Published by Apostrophic
  * Laboratories. www.apostrophiclab.com & www.woodardworks.com
