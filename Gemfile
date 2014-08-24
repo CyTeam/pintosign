@@ -31,6 +31,7 @@ group :development do
   gem 'puma'
   # Deployment
   # gem 'capones_recipes', '0.14.3'
+  gem 'pry'
 end
 
 
