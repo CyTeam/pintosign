@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   before_filter :available_locales
 
   def available_locales
-    Kuhsaft::Page.translation_locales = ['de']
+    ['de']
   end
 end
