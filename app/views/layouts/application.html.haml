@@ -6,10 +6,7 @@
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
 
-    %title
-      - if @page
-        = @page.title + " | "
-      = t('pintosign.title')
+    = yield(:head)
     = stylesheet_link_tag 'screen', 'pintosign', :media => 'screen, projection, print'
     %link{:rel => "stylesheet", :type => "text/css", :href => "/fancybox/jquery.fancybox-1.3.4.css", :media => "screen"}
     = javascript_include_tag 'application', 'cufon-yui', 'Ashby_700.font', 'cufon', 'easySlider1.7', 'slider'
