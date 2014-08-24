@@ -28,7 +28,7 @@ group :development do
   # Haml generators
   gem 'hpricot'
   gem 'ruby_parser'
-
+  gem 'puma'
   # Deployment
   # gem 'capones_recipes', '0.14.3'
 end
@@ -41,6 +41,7 @@ end
 
 gem 'haml'
 gem 'haml-rails'
+gem 'slim'
 gem 'jquery-rails'
 gem 'coffee-script'
 

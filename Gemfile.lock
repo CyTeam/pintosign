@@ -108,6 +108,8 @@ GEM
       activesupport (>= 3.1)
       arel
     polyglot (0.3.5)
+    puma (2.9.0)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-google_analytics (1.0.2)
       rack
@@ -144,6 +146,9 @@ GEM
     simple_form (3.0.2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
+    slim (2.0.3)
+      temple (~> 0.6.6)
+      tilt (>= 1.3.3, < 2.1)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -154,6 +159,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     subexec (0.2.3)
+    temple (0.6.8)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -183,10 +189,12 @@ DEPENDENCIES
   jquery-rails
   kuhsaft
   mysql2
+  puma
   rack-google_analytics
   rails
   rails3-generators
   ruby_parser
   sass-rails
+  slim
   therubyracer
   uglifier (>= 1.0.3)
