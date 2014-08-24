@@ -27,3 +27,6 @@ set :use_sudo, false
 set :deploy_via, :remote_cache
 set :git_enable_submodules, 1
 set :copy_exclude, [".git", "spec"]
+set :gateway, {
+  "www01.cyt.ch" => "web01.wikisigns"
+}
