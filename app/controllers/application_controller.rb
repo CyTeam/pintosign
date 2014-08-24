@@ -3,9 +3,5 @@ require 'kuhsaft'
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  before_filter :available_locales
-
-  def available_locales
-    ['de']
-  end
+  helper Kuhsaft::Engine.helpers
 end
