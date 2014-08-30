@@ -5,20 +5,14 @@ source 'http://rubygems.org'
 # Rails
 # =====
 gem 'rails'
-
+gem 'turbolinks'
 # Database
 gem 'mysql2'
-
-gem 'compass'
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'uglifier', '>= 1.0.3'
-  gem 'fancy-buttons'
-end
-
+gem 'sass-rails'
+gem 'bootstrap-sass'
+gem 'coffee-rails'
+gem 'font-awesome-rails'
+gem 'uglifier', '>= 1.0.3'
 gem 'execjs'
 gem 'therubyracer'
 
