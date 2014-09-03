@@ -1,5 +1,9 @@
 class WelcomeController < ApplicationController
 
-  def index; end
+  layout :welcome
+
+  def index
+
+  end
 
 end
