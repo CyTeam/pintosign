@@ -1,13 +1,19 @@
 doctype 5
 html
   head
-    title> Timetracker
+    = yield(:head)
     = csrf_meta_tags
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = stylesheet_link_tag    "application", "data-turbolinks-track" => true, media: "all"
     = javascript_include_tag "application", "data-turbolinks-track" => true
   body
-    = render 'layouts/navbar'
-    p.notice= notice
-    p.alert= alert
-    .container= yield
+    .container-fluid
+      .row
+        #navigation.col-md-2
+          = render_navigation context: :main
+    / .container-fluid
+    /   #top-row.row
+    /     #picture.col-md-12
+    /   .row
+
+    /     .col-md-10 = yield

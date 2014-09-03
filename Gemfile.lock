@@ -145,6 +145,9 @@ GEM
     sexp_processor (4.4.4)
     simple-navigation (3.13.0)
       activesupport (>= 2.3.2)
+    simple-navigation-bootstrap (1.0.0)
+      railties (>= 3.1)
+      simple-navigation (>= 3.7.0)
     simple_form (3.0.2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -201,7 +204,7 @@ DEPENDENCIES
   rails3-generators
   ruby_parser
   sass-rails
-  simple-navigation
+  simple-navigation-bootstrap
   slim
   therubyracer
   turbolinks

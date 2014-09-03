@@ -1,10 +1,11 @@
 SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
-    primary.dom_class      = 'right'
-    primary.selected_class = 'active'
+    primary.dom_class = 'nav nav-pills nav-stacked'
+
+    primary.item 'pinto', 'pinto', root_path
 
     Kuhsaft::Page.find_by(slug_de: 'pinto').children.published.translated.each do |page|
-      primary.item page.id, page.title, page.link, class: 'contact icon'do |sub_item|
+      primary.item "navbar-item-#{page.id}", page.title, page.link do |sub_item|
         # build second level
         page.children.published.translated.each do |subpage|
           sub_item.item subpage.id, subpage.title, subpage.link
