@@ -1,7 +1,8 @@
 doctype 5
 html
   = render 'layouts/head'
-  body
+  body#welcome
     .container
       .row
-        .col-md-12 = yield
+        .col-md-7.col-md-offset-3
+          = yield
