@@ -8,8 +8,6 @@ gem 'rails'
 gem 'turbolinks'
 # Database
 gem 'mysql2'
-gem 'sass-rails'
-gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'font-awesome-rails'
 gem 'uglifier', '>= 1.0.3'
