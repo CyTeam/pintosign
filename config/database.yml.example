@@ -30,6 +30,13 @@ mysql: &mysql
   host:     localhost
   encoding: utf8
 
+postgres: &postgres
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  username:
+  password:
+
 # Environments
 # ============
 production:
