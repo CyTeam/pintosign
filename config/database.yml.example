@@ -40,17 +40,17 @@ postgres: &postgres
 # Environments
 # ============
 production:
-  database: db/production.sqlite3
-  <<: *sqlite
+  database: pintosign_production
+  <<: *postgres
 
 development:
-  database: db/development.sqlite3
-  <<: *sqlite
+  database: pintosign_development
+  <<: *postgres
 
 staging:
-  database: db/staging.sqlite3
-  <<: *sqlite
+  database: pintosign_staging
+  <<: *postgres
 
 test:
-  database: db/test.sqlite3
-  <<: *sqlite
+  database: pintosign_test
+  <<: *postgres
