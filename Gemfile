@@ -7,7 +7,14 @@ source 'http://rubygems.org'
 gem 'rails'
 gem 'turbolinks'
 # Database
-gem 'mysql2'
+group :mysql do
+  gem 'mysql2'
+end
+
+group :postgres do
+  gem 'pg'
+end
+
 gem 'coffee-rails'
 gem 'font-awesome-rails'
 gem 'uglifier', '>= 1.0.3'
