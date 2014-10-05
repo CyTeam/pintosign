@@ -1,5 +1,9 @@
 SimpleNavigation::Configuration.run do |navigation|
+
+  navigation.id_generator = Proc.new {|key| "main-navigation-#{key}"}
+
   navigation.items do |primary|
+
     primary.dom_class = 'nav nav-pills nav-stacked'
 
     primary.item 'pinto', 'pinto', root_path
