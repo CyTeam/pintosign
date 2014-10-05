@@ -2,9 +2,10 @@ doctype 5
 html
   = render 'layouts/head'
   body
+    = head_image
     .container-fluid
-      .row
-        #navigation.col-md-2
+      .row-fluid
+        #navigation.col-md-2.span2
           = render_navigation context: :main
     / .container-fluid
     /   #top-row.row
