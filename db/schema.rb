@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140824140033) do
+ActiveRecord::Schema.define(version: 20140907131635) do
 
   create_table "kuhsaft_assets", force: true do |t|
     t.string   "file"
@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20140824140033) do
     t.integer  "page_id"
     t.text     "url_en"
     t.text     "url_de"
-    t.string   "page_type",          default: "content"
+    t.string   "page_type",               default: "content"
     t.text     "fulltext_en"
     t.text     "fulltext_de"
     t.string   "ancestry"
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 20140824140033) do
     t.text     "page_title_en"
     t.text     "page_title_de"
     t.string   "identifier"
+    t.string   "google_verification_key"
   end
 
   add_index "kuhsaft_pages", ["ancestry"], name: "index_kuhsaft_pages_on_ancestry", using: :btree
