@@ -5,9 +5,9 @@ html
     = head_image
     .container-fluid
       .row-fluid
-        #navigation.col-md-1.span1
+        .col-md-1.span1
           #pinto-ball
-        #navigation.col-md-4.span4
+        #navigation.col-md-3.span3
           = render_navigation context: :main
-        .col-md-7.span7 = yield
+        .col-md-8.span8 = yield
     #pinto-line
