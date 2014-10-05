@@ -2,7 +2,7 @@ doctype 5
 html
   = render 'layouts/head'
   body#welcome
-    .container
-      .row
-        .col-md-7.col-md-offset-3
+    .container-fluid
+      .row-fluid
+        .col-md-7.col-md-offset-3.span7.offset3
           = yield
