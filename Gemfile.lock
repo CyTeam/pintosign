@@ -70,7 +70,7 @@ GEM
     jquery-ui-rails (5.0.2)
       railties (>= 3.2.16)
     json (1.8.1)
-    kuhsaft (2.6.0)
+    kuhsaft (2.5.1)
       ancestry
       bootstrap-sass (= 2.3.2.2)
       bourbon
@@ -190,7 +190,7 @@ DEPENDENCIES
   haml-rails
   hpricot
   jquery-rails
-  kuhsaft
+  kuhsaft (= 2.5.1)
   mysql2
   pg
   pry

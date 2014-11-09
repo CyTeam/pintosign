@@ -45,7 +45,7 @@ gem 'slim'
 gem 'jquery-rails'
 gem 'coffee-script'
 
-gem 'kuhsaft'
+gem 'kuhsaft', '2.5.1'
 gem 'simple-navigation-bootstrap'
 
 # Monitoring
