@@ -43,10 +43,16 @@ html, body
 
   a.selected
     color: $pintoOrange
-  > li.selected > ul > li
-    color: $linkColor
-    &.selected
-      color: $pintoOrange
+
+  li.selected > ul
+    margin: 0 0 12px 30px
+
+  > li.selected > ul
+
+    > li
+      color: $linkColor
+      &.selected
+        color: $pintoOrange
 
 body
   &#welcome
