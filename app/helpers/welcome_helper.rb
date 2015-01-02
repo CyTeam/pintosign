@@ -2,7 +2,7 @@ module WelcomeHelper
 
   def overview_navigation
     [
-      {href: ausstellungen_page.link,  coords: '176,0,265,28',    title: ausstellungen_page.title},
+      {href: ausstellungen_page.link,  coords: '176,0,325,28',    title: ausstellungen_page.title},
       {href: art_collection_page.link, coords: '342,25,488,54',   title: art_collection_page.title},
       {href: sonstiges_page.link,      coords: '155,213,265,241', title: sonstiges_page.title},
       {href: biographie_page.link,     coords: '401,222,521,248', title: biographie_page.title},
