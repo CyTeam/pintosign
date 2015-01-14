@@ -1,0 +1,14 @@
+doctype 5
+html
+  head
+    = render '/refinery/head'
+  body#welcome
+    .container-fluid
+      .row-fluid
+        .col-md-7.col-md-offset-3.span7.offset3
+          = image_tag 'overview_navigation.png', :usemap => '#overview_navigation', :id => 'pinto-overview-navigation'
+
+          map name='overview_navigation'
+            - overview_navigation.each do |navi|
+              area shape='rect' coords=navi[:coords] href=navi[:href] title=navi[:title] alt=navi[:title]
+
