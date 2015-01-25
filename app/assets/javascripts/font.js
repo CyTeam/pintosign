@@ -1,7 +1,5 @@
 // = require font/cufon-yui
-// = require font/cufon
-// = require font/Ashby_700.font
-// = require font/ashby.cufonfonts
+// = require_tree ./font
 // = require_self
 
-Cufon.replace('#navigation > ul > li > a');
+Cufon.replace('#menu a, #logo a');
