@@ -5,11 +5,11 @@ html
   body id=canonical_id(@page)
     = render '/refinery/site_bar', head: true
     = head_image
-    = render "/refinery/header"
     .container-fluid
       .row-fluid
         .col-md-1.span1
           #pinto-ball
+        = render "/refinery/header"
         #navigation.col-md-3.span3
         .col-md-8.span8 = yield
     #pinto-line
