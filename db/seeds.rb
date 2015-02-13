@@ -21,7 +21,7 @@ ausstellungen = Refinery::Page.create!(
 
 univers = Refinery::Page.create!(
   title:  "universum von pinto",
-  parent: ausstellungen,,
+  parent: ausstellungen,
 )
 
 ankenwaage = Refinery::Page.create!(
