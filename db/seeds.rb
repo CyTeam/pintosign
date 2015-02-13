@@ -7,6 +7,12 @@ home_page.save!
 
 Refinery::Page.find_by_slug('about').try(:destroy)
 
+pinto = Refinery::Page.create!(
+  title:    "pinto",
+  link_url: "/",
+  parent:   home_page,
+)
+
 ausstellungen = Refinery::Page.create!(
   title:               "ausstellungen",
   skip_to_first_child: true,
