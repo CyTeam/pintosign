@@ -21,26 +21,22 @@ ausstellungen = Refinery::Page.create!(
 
 univers = Refinery::Page.create!(
   title:  "universum von pinto",
-  parent: ausstellungen,
-  menu_title: "• universum von pinto",
+  parent: ausstellungen,,
 )
 
 ankenwaage = Refinery::Page.create!(
   title:  "ankenwaage",
   parent: ausstellungen,
-  menu_title: "• ankenwaage",
 )
 
 potz = Refinery::Page.create!(
   title:  "potz 1000",
   parent: ausstellungen,
-  menu_title: "• potz 1000",
 )
 
 ue50art = Refinery::Page.create!(
   title:  "ue50 art",
   parent: ausstellungen,
-  menu_title: "• ue50 art",
 )
 
 art = Refinery::Page.create!(
@@ -52,25 +48,21 @@ art = Refinery::Page.create!(
 rigi = Refinery::Page.create!(
   title:  "rigi",
   parent: art,
-  menu_title: "• rigi",
 )
 
 sonnwende = Refinery::Page.create!(
   title:  "sonnwende",
   parent: art,
-  menu_title: "• sonnwende",
 )
 
 wikisigns_digital = Refinery::Page.create!(
   title:  "wikisigns digital",
   parent: art,
-  menu_title: "• wikisigns digital",
 )
 
 wikisigns_analog = Refinery::Page.create!(
   title:  "wikisigns analog",
   parent: art,
-  menu_title: "• wikisigns analog",
 )
 
 biographie = Refinery::Page.create!(
@@ -87,11 +79,9 @@ info = Refinery::Page.create!(
 impressum = Refinery::Page.create!(
   title:  "impressum",
   parent: info,
-  menu_title: "• impressum",
 )
 
 presse = Refinery::Page.create!(
   title:  "presse",
   parent: info,
-  menu_title: "• presse",
 )
