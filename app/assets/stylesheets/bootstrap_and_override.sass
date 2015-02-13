@@ -70,9 +70,14 @@ html, body
     > a
       padding: 5px 0 5px 0
     ul > li
-      list-style-type:     disc
+      a:before
+        content: "• "
+
       > a
         padding: 0
+
+      &:hover
+        color: $pintoOrange
 
 
 body
