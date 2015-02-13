@@ -33,31 +33,37 @@ html, body
   margin:
     left: 1.12766%
 
-  > .nav
-    float: left
-    width: 100%
+#menu
+  > ul.nav > li
+    color: $link-color
 
-  > li > ul
+    &.first
+      margin:
+        bottom: 40px
+      a
+        font:
+          weight: bold
 
-    font-family:         "Century Gothic", CenturyGothic, AppleGothic, sans-serif
-    list-style-type:     disc
-    list-style-position: inside
-    margin:              0 0 12px 15px
+    > ul
+      display: none
+      font-family:         "Century Gothic", CenturyGothic, AppleGothic, sans-serif
+      list-style-type:     disc
+      list-style-position: inside
+      margin:              0 0 12px 15px
 
-  a.selected
-    color: $pintoOrange
-
-  li.selected > ul
-    margin: 0 0 12px 0px
-    > li.selected > ul li.selected
-      margin: 0 0 12px 30px
-
-  > li.selected > ul
-
-    > li
-      color: $link-color
-      &.selected
+    &.selected
+      > a
         color: $pintoOrange
+      > ul
+        display: block
+
+        li.selected > a
+          color: $pintoOrange
+
+  // Bootstrap override
+  .nav > li > a
+    padding: 5px 0 5px 0
+
 
 body
   &#welcome
@@ -72,13 +78,6 @@ body
     height: 100px
   background:
     color:  white
-
-#main-navigation-pinto
-  margin:
-    bottom: 40px
-  a
-    font:
-      weight: bold
 
 #pinto-ball
   float:   right
