@@ -8,9 +8,11 @@ html
     .container-fluid
       .row-fluid
         .col-md-1.span1
-          #pinto-ball
+          #pinto-ball.visible-lg-block
         = render "/refinery/header"
         #navigation.col-md-3.span3
         .col-md-8.span8 = yield
-    #pinto-line
+    .container-fluid
+      .row-fluid
+        #pinto-line.visible-lg-block
     = render "/refinery/javascripts"
