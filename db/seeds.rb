@@ -10,11 +10,11 @@ Refinery::Page.find_by_slug('about').try(:destroy)
 def attache_picture_to_page(page, url)
   puts "Attach #{url} to #{page.title}"
 
-  image    = Dragonfly.app.fetch_url(url)
-  ef_image = Refinery::Image.create!(image: image)
+  image     = Dragonfly.app.fetch_url(url)
+  ref_image = Refinery::Image.create!(image: image)
 
   Refinery::ImagePage.create!(
-    image: image,
+    image: ref_image,
     page:  page,
   )
 end
