@@ -116,6 +116,7 @@ GEM
       json
     awesome_nested_set (3.0.2)
       activerecord (>= 4.0.0, < 5)
+    awesome_print (1.6.1)
     babosa (1.0.2)
     bcrypt (3.1.10)
     bootstrap-sass (3.3.3)
@@ -267,6 +268,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   font-awesome-rails
