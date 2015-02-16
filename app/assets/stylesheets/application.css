@@ -4,5 +4,6 @@
  *= require refinery/site_bar
  *= require font-awesome
  *= require bootstrap_and_override
+ *= require jquery.fancybox
  *= require_self
  */
