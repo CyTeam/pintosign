@@ -1,0 +1,4 @@
+ul#gallery
+  - @page.images.each do |image|
+    li
+      = link_to image_tag(image.thumbnail(geometry: "200x200#c").url), image.thumbnail(geometry: "900x600").url
