@@ -43,6 +43,7 @@ ausstellungen = Refinery::Page.create!(
 univers = Refinery::Page.create!(
   title:  "universum von pinto",
   parent: ausstellungen,
+  view_template: "gallery",
 )
 pages_with_body << univers
 %w[
