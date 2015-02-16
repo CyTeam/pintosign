@@ -70,4 +70,4 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.0']
 
 gem 'seo_meta', git: 'https://github.com/parndt/seo_meta', branch: 'master'
 
-gem 'paper_trail', git: 'https://github.com/airblade/paper_trail', branch: 'master'
+gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
