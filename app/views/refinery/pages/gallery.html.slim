@@ -1,4 +1,6 @@
 ul#gallery
+  = raw @page.content_for(:body)
   - @page.images.each do |image|
     li
       = link_to image_tag(image.thumbnail(geometry: "100x100#c").url), image.thumbnail(geometry: "775x775").url, rel: "group1"
+
