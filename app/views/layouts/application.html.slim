@@ -3,7 +3,6 @@ html
   head
     = render '/refinery/head'
   body id=canonical_id(@page)
-    = render '/refinery/site_bar', head: true
     = head_image
     .container-fluid
       .row-fluid
@@ -15,4 +14,5 @@ html
     .container-fluid
       .row-fluid
         #pinto-line.visible-lg-block
+    = render '/refinery/site_bar', head: true
     = render "/refinery/javascripts"
