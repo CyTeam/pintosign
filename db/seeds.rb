@@ -90,6 +90,7 @@ end
 ankenwaage = Refinery::Page.create!(
   title:  "ankenwaage",
   parent: ausstellungen,
+  view_template: "gallery",
 )
 pages_with_body << ankenwaage
 %w[
@@ -133,6 +134,7 @@ end
 potz = Refinery::Page.create!(
   title:  "potz 1000",
   parent: ausstellungen,
+  view_template: "gallery",
 )
 pages_with_body << potz
 %w[
@@ -154,6 +156,7 @@ end
 ue50art = Refinery::Page.create!(
   title:  "ue50 art",
   parent: ausstellungen,
+  view_template: "gallery",
 )
 pages_with_body << ue50art
 %w[
