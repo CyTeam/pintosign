@@ -21,22 +21,30 @@ def attache_picture_to_page(page, url)
   )
 end
 
+def add_body_page_part_to(page)
+  puts "Add body page part to #{page.title}"
+  Refinery::PagePart.create(
+    page:  page,
+    title: "Body"
+  )
+end
+
+pages_with_body = []
 pinto = Refinery::Page.create!(
   title:    "pinto",
   link_url: "/",
   parent:   home_page,
 )
-
 ausstellungen = Refinery::Page.create!(
   title:               "ausstellungen",
   skip_to_first_child: true,
   parent:              home_page,
 )
-
 univers = Refinery::Page.create!(
   title:  "universum von pinto",
   parent: ausstellungen,
 )
+pages_with_body << univers
 %w[
 http://pintosign.ch/uploads/file/135/_bersicht2.jpg
 http://pintosign.ch/uploads/file/129/_MG_9456.jpg
@@ -83,7 +91,7 @@ ankenwaage = Refinery::Page.create!(
   title:  "ankenwaage",
   parent: ausstellungen,
 )
-
+pages_with_body << ankenwaage
 %w[
 http://pintosign.ch/uploads/file/46/stup1.jpg
 http://pintosign.ch/uploads/file/47/stup2.jpg
@@ -126,7 +134,7 @@ potz = Refinery::Page.create!(
   title:  "potz 1000",
   parent: ausstellungen,
 )
-
+pages_with_body << potz
 %w[
 http://pintosign.ch/uploads/file/82/01.jpg
 http://pintosign.ch/uploads/file/83/02.jpg
@@ -147,7 +155,7 @@ ue50art = Refinery::Page.create!(
   title:  "ue50 art",
   parent: ausstellungen,
 )
-
+pages_with_body << ue50art
 %w[
 http://pintosign.ch/uploads/file/93/IMG_20121107_163929.jpg
 http://pintosign.ch/uploads/file/94/IMG_20121107_164023.jpg
@@ -162,44 +170,45 @@ art = Refinery::Page.create!(
   skip_to_first_child: true,
   parent:              home_page,
 )
-
 rigi = Refinery::Page.create!(
   title:  "rigi",
   parent: art,
 )
-
-sonnwende = Refinery::Page.create!(
-  title:  "sonnwende",
+pages_with_body << rigi
+sonnenwende = Refinery::Page.create!(
+  title:  "sonnenwende",
   parent: art,
 )
-
+pages_with_body << sonnenwende
 wikisigns_digital = Refinery::Page.create!(
   title:  "wikisigns digital",
   parent: art,
 )
-
+pages_with_body << wikisigns_digital
 wikisigns_analog = Refinery::Page.create!(
   title:  "wikisigns analog",
   parent: art,
 )
-
+pages_with_body << wikisigns_analog
 biographie = Refinery::Page.create!(
   title:  "biographie",
   parent: home_page,
 )
-
+pages_with_body << biographie
 info = Refinery::Page.create!(
   title:               "info",
   skip_to_first_child: true,
   parent:              home_page,
 )
-
 impressum = Refinery::Page.create!(
   title:  "impressum",
   parent: info,
 )
-
+pages_with_body << impressum
 presse = Refinery::Page.create!(
   title:  "presse",
   parent: info,
 )
+pages_with_body << presse
+
+pages_with_body.each { |page| add_body_page_part_to(page) }
