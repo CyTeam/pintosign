@@ -9,6 +9,15 @@ GIT
       request_store (~> 1.1.0)
 
 GIT
+  remote: git://github.com/refinery/refinerycms-page-images.git
+  revision: 48495bf75f9d2dde70a6720502e09d72ca91ed65
+  specs:
+    refinerycms-page-images (3.0.0)
+      decorators (~> 2.0.0)
+      globalize (~> 4.0)
+      refinerycms-pages (~> 3.0.0)
+
+GIT
   remote: https://github.com/parndt/seo_meta
   revision: c575efda84bb775694c32b13f9b446265c6b1e33
   branch: master
@@ -273,6 +282,7 @@ DEPENDENCIES
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
   refinerycms-i18n!
+  refinerycms-page-images!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

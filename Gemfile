@@ -58,6 +58,7 @@ end
 
 gem 'refinerycms',      git: 'https://github.com/refinery/refinerycms',      branch: 'master'
 gem 'refinerycms-i18n', git: 'https://github.com/refinery/refinerycms-i18n', branch: 'master'
+gem 'refinerycms-page-images', github: 'refinery/refinerycms-page-images'
 
 gem 'quiet_assets'
 
