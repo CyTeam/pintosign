@@ -5,6 +5,8 @@ home_page                 = Refinery::Page.find_by_slug('home')
 home_page.layout_template = "intro"
 home_page.save!
 
+home_page.parts.delete_all
+
 Refinery::Page.find_by_slug('about').try(:destroy)
 
 def attache_picture_to_page(page, url)
