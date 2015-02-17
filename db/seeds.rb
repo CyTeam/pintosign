@@ -25,15 +25,17 @@ def add_body_page_part_to(page)
   puts "Add body page part to #{page.title}"
 
   html_content = Rails.root.join("db/seeds/pages").join(page.nested_path.sub("/", "") + ".html")
-  page_part    = Refinery::PagePart.create(
+  page_part    = Refinery::PagePart.new(
     page:  page,
     title: "Body"
   )
 
   if File.exists?(html_content)
     puts "Add content to body page part on #{page.title}"
-    page_part.update_attribute(:body, File.read(html_content))
+    page_part.body = File.read(html_content)
   end
+
+  page_part.save!
 end
 
 pages_with_body = []
