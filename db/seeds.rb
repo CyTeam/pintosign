@@ -21,18 +21,28 @@ def attache_picture_to_page(page, url)
   )
 end
 
+Dragonfly.app.secret = YAML.load_file(Rails.root.join('config/secrets.yml').to_s)[Rails.env]["secret_key_base"]
+
 def add_body_page_part_to(page)
   puts "Add body page part to #{page.title}"
 
-  html_content = Rails.root.join("db/seeds/pages").join(page.nested_path.sub("/", "") + ".html")
+  html_content_filepath = Rails.root.join("db/seeds/pages").join(page.nested_path.sub("/", "") + ".html")
   page_part    = Refinery::PagePart.new(
     page:  page,
     title: "Body"
   )
 
-  if File.exists?(html_content)
+  if File.exists?(html_content_filepath)
     puts "Add content to body page part on #{page.title}"
-    page_part.body = File.read(html_content)
+    html_content   = File.read(html_content_filepath)
+    image_list     = html_content.scan(/<img.+?src=[\"'](.+?)[\"'].*?>/).flatten
+
+    image_list.each do |image_url|
+      image        = Dragonfly.app.fetch_url("http://pintosign.ch#{image_url}")
+      html_content = html_content.gsub(image_url, image.url)
+    end
+
+    page_part.body = html_content
   end
 
   page_part.save!
