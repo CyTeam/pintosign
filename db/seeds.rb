@@ -39,7 +39,8 @@ def add_body_page_part_to(page)
 
     image_list.each do |image_url|
       image        = Dragonfly.app.fetch_url("http://pintosign.ch#{image_url}")
-      html_content = html_content.gsub(image_url, image.url)
+      ref_image    = Refinery::Image.create!(image: image)
+      html_content = html_content.gsub(image_url, ref_image.url)
     end
 
     page_part.body = html_content
