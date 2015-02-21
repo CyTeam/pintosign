@@ -9,8 +9,8 @@ module ApplicationHelper
       end
 
       html_content << content_tag(:div, class: 'row-fluid') do
-        content_tag(:div, class: 'span3 offset9 text-right') do
-          content_tag(:blockquote, class: 'pull-right') do
+        content_tag(:div, class: 'offset9 text-right') do
+          content_tag(:blockquote, id: "querbilder-quote", class: 'pull-right') do
             content_tag(:p, page_image.image.image_title)
           end
         end
