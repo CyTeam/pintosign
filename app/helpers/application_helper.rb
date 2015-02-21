@@ -5,7 +5,7 @@ module ApplicationHelper
 
     content_tag(:div, id: 'image', class: 'container-fluid') do
       html_content = content_tag(:div, class: 'row-fluid') do
-        image_tag page_image.image.url, alt: page_image.image.image_title
+        image_tag page_image.image.thumbnail(geometry: "1920x100#se").url, alt: page_image.image.image_title
       end
 
       html_content << content_tag(:div, class: 'row-fluid') do
