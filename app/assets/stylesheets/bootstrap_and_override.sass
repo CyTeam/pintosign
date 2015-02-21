@@ -93,9 +93,19 @@ body
   background:
     color:  white
 
-#pinto-ball
+#pinto-ball-container
   float:   right
   display: block
+  top:     160px
+  z-index: 1
+  background:
+    color: white
+  padding:
+    top: 12px
+  margin:
+    left: ($ballSize / 2) * -1 + 1
+
+#pinto-ball
   height:  $ballSize
   width:   $ballSize
   border:
@@ -105,13 +115,17 @@ body
 
 #pinto-line
   display: block
-  position: absolute
+
   height: 100%
   width: 2px
   background-color: $pintoOrange
   top: 0px
   margin-top: 160px
-  left: 7%
+
+#pinto-line,
+#pinto-ball-container
+  position: absolute
+  left:     7%
 
 // Attache the refinery site bar to the bottom.
 #site_bar

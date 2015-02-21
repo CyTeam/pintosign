@@ -6,13 +6,12 @@ html
     = head_image
     .container-fluid
       .row-fluid
-        .col-md-1.span1
-          #pinto-ball.visible-lg-block
+        .col-md-1
         = render "/refinery/header"
-        #navigation.col-md-3.span3
-        .col-md-8.span8 = yield
-    .container-fluid
-      .row-fluid
-        #pinto-line.visible-lg-block
+        #navigation.col-md-3
+        .col-md-8 = yield
+    #pinto-ball-container.visible-lg-block
+      #pinto-ball
+    #pinto-line.visible-lg-block
     = render '/refinery/site_bar', head: true
     = render "/refinery/javascripts"
