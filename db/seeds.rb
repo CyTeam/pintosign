@@ -80,6 +80,7 @@ ausstellungen = Refinery::Page.create!(
   title:               "ausstellungen",
   skip_to_first_child: true,
   parent:              home_page,
+  deletable:           false,
 )
 univers = Refinery::Page.create!(
   title:  "universum von pinto",
@@ -214,6 +215,7 @@ art = Refinery::Page.create!(
   title:               "art",
   skip_to_first_child: true,
   parent:              home_page,
+  deletable:           false,
 )
 rigi = Refinery::Page.create!(
   title:  "rigi",
@@ -236,14 +238,16 @@ wikisigns_analog = Refinery::Page.create!(
 )
 pages_with_body << wikisigns_analog
 biographie = Refinery::Page.create!(
-  title:  "biographie",
-  parent: home_page,
+  title:     "biographie",
+  parent:    home_page,
+  deletable: false,
 )
 pages_with_body << biographie
 info = Refinery::Page.create!(
   title:               "info",
   skip_to_first_child: true,
   parent:              home_page,
+  deletable:           false,
 )
 impressum = Refinery::Page.create!(
   title:  "impressum",
