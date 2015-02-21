@@ -1,32 +1,23 @@
 module ApplicationHelper
 
   def head_image
-    image_key  = head_images.keys[rand(head_images.length)]
-    image_path = head_images[image_key]
+    page_image =  Refinery::ImagePage.where(page: images_page).order("random()").first
 
     content_tag(:div, id: 'image', class: 'container-fluid') do
       html_content = content_tag(:div, class: 'row-fluid') do
-        image_tag image_path, alt: image_key
+        image_tag page_image.image.url, alt: page_image.image.image_title
       end
 
       html_content << content_tag(:div, class: 'row-fluid') do
         content_tag(:div, class: 'span3 offset9 text-right') do
           content_tag(:blockquote, class: 'pull-right') do
-            content_tag(:p, image_key)
+            content_tag(:p, page_image.image.image_title)
           end
         end
       end
 
       html_content
     end
-  end
-
-  def head_images
-    @head_images ||= Hash[
-      Dir["#{Rails.root}/public/images/head/*.{png,jpg}"].map do |file|
-        [File.basename(file, File.extname(file)), file.sub(Rails.root.to_s + '/public', '')]
-      end
-    ]
   end
 
   def overview_navigation
@@ -39,6 +30,10 @@ module ApplicationHelper
   end
 
   private
+
+  def images_page
+    @images_page ||= Refinery::Page.where(title: "querbilder")
+  end
 
   def ausstellungen_page
     @ausstellungen_page ||= Refinery::Page.by_title('ausstellungen').first
