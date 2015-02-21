@@ -1,13 +1,13 @@
 puts "Added by Refinery CMS Pages extension"
 Refinery::Pages::Engine.load_seed
 
-home_page                 = Refinery::Page.find_by_slug('home')
+home_page                 = Refinery::Page.where(slug: 'home').first
 home_page.layout_template = "intro"
 home_page.save!
 
 home_page.parts.delete_all
 
-Refinery::Page.find_by_slug('about').try(:destroy)
+Refinery::Page.where(slug: 'about').first.try(:destroy)
 
 def attache_picture_to_page(page, url)
   puts "Attach #{url} to #{page.title}"
