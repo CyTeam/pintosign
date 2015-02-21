@@ -49,7 +49,28 @@ def add_body_page_part_to(page)
   page_part.save!
 end
 
+def add_head_images(page)
+  Dir["#{Rails.root.join("db/seeds/querbilder")}/*.{png,jpg}"].each do |image_path|
+    title     = File.basename(image_path, ".*")
+    image     = Dragonfly.app.fetch_file(image_path)
+    ref_image = Refinery::Image.create!(image: image, image_title: title)
+
+    Refinery::ImagePage.create!(
+      image: ref_image,
+      page:  page,
+    )
+  end
+end
+
 pages_with_body = []
+querbilder = Refinery::Page.create!(
+  title:        "querbilder",
+  parent:       home_page,
+  show_in_menu: false,
+  deletable:    false,
+)
+pages_with_body << querbilder
+add_head_images(querbilder)
 pinto = Refinery::Page.create!(
   title:    "pinto",
   link_url: "/",
