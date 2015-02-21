@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/raskhadafi/refinerycms.git
-  revision: 29bd696b1ccfef3e3ca4caf6e47d907625fd6a2d
+  revision: 9390f26348a1fc525d3c74b830536ad4abd04a8f
   branch: patch-1
   specs:
     refinerycms (3.0.0)
