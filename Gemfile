@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '~> 4.2.0'
 
 group :mysql do
   gem 'mysql2'
@@ -49,31 +47,14 @@ group :production do
   gem "rack-cache", require: "rack/cache"
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
-
 gem 'refinerycms',      git: 'https://github.com/refinery/refinerycms',      branch: 'master'
 gem 'refinerycms-i18n', git: 'https://github.com/refinery/refinerycms-i18n', branch: 'master'
 gem 'refinerycms-page-images', github: 'refinery/refinerycms-page-images'
-
 gem 'quiet_assets'
 
 # Add support for refinerycms-acts-as-indexed
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']
-
 # Add support for refinerycms-wymeditor
 gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.0']
-
 gem 'seo_meta', git: 'https://github.com/parndt/seo_meta', branch: 'master'
-
 gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
