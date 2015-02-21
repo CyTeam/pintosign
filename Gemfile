@@ -45,6 +45,10 @@ group :development do
   gem 'awesome_print'
 end
 
+group :production do
+  gem "rack-cache", require: "rack/cache"
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
