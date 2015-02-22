@@ -34,7 +34,7 @@ gem "turbolinks"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.0"
 # bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 0.4.0",          group: :doc
+gem "sdoc", "~> 0.4.0", group: :doc
 
 group :development do
   gem "spring" # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -47,8 +47,8 @@ group :production do
   gem "rack-cache", require: "rack/cache"
 end
 
-gem "refinerycms",      github: "raskhadafi/refinerycms",      branch: "patch-1"
-gem "refinerycms-i18n", git: "https://github.com/refinery/refinerycms-i18n", branch: "master"
+gem "refinerycms",             github: "raskhadafi/refinerycms",           branch: "patch-1"
+gem "refinerycms-i18n",        github: "refinery/refinerycms-i18n",        branch: "master"
 gem "refinerycms-page-images", github: "refinery/refinerycms-page-images"
 gem "quiet_assets"
 
@@ -56,5 +56,5 @@ gem "quiet_assets"
 gem "refinerycms-acts-as-indexed", ["~> 2.0", ">= 2.0.0"]
 # Add support for refinerycms-wymeditor
 gem "refinerycms-wymeditor", ["~> 1.0", ">= 1.0.0"]
-gem "seo_meta", git: "https://github.com/parndt/seo_meta", branch: "master"
+gem "seo_meta",    github: "parndt/seo_meta",      branch: "master"
 gem "paper_trail", github: "airblade/paper_trail", branch: "master"

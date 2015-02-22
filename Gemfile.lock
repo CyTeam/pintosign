@@ -9,6 +9,14 @@ GIT
       request_store (~> 1.1.0)
 
 GIT
+  remote: git://github.com/parndt/seo_meta.git
+  revision: c575efda84bb775694c32b13f9b446265c6b1e33
+  branch: master
+  specs:
+    seo_meta (2.0.0.rc.1)
+      railties (>= 3.0.0)
+
+GIT
   remote: git://github.com/raskhadafi/refinerycms.git
   revision: 9390f26348a1fc525d3c74b830536ad4abd04a8f
   branch: patch-1
@@ -53,6 +61,15 @@ GIT
       refinerycms-core (= 3.0.0)
 
 GIT
+  remote: git://github.com/refinery/refinerycms-i18n.git
+  revision: ff93ad912c86eb2f1a07a77ac1c75133474f7fea
+  branch: master
+  specs:
+    refinerycms-i18n (3.0.1)
+      rails-i18n (~> 4.0.1)
+      routing-filter (>= 0.4.0)
+
+GIT
   remote: git://github.com/refinery/refinerycms-page-images.git
   revision: d67d2fe6bbe5910ac2bddbe21b7238ebdf1a0340
   specs:
@@ -60,23 +77,6 @@ GIT
       decorators (~> 2.0.0)
       globalize (~> 5.0)
       refinerycms-pages (~> 3.0.0)
-
-GIT
-  remote: https://github.com/parndt/seo_meta
-  revision: c575efda84bb775694c32b13f9b446265c6b1e33
-  branch: master
-  specs:
-    seo_meta (2.0.0.rc.1)
-      railties (>= 3.0.0)
-
-GIT
-  remote: https://github.com/refinery/refinerycms-i18n
-  revision: ff93ad912c86eb2f1a07a77ac1c75133474f7fea
-  branch: master
-  specs:
-    refinerycms-i18n (3.0.1)
-      rails-i18n (~> 4.0.1)
-      routing-filter (>= 0.4.0)
 
 GEM
   remote: https://rubygems.org/
