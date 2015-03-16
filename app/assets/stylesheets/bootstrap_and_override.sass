@@ -158,8 +158,17 @@ body
     height: 1.3em
 
 #slider
-  ul li
-    list-style-type: none
+  ul
+    padding:
+      left: 0
+    li
+      list-style-type: none
+      width:           993px
+      img
+        float: left
+        margin-right: 20px
+  &.small li
+    height: 220px
 
 #nextBtn
   display:  block
@@ -196,3 +205,11 @@ body
     background:
       image:  asset-data-url("btn_prev.png")
       repeat: no-repeat
+
+#body_content
+  h1
+    font:
+      weight: bold
+      size: 32px
+    margin-bottom: 30px
+    line-height: 1.6em
