@@ -62,6 +62,18 @@ def add_head_images(page)
   end
 end
 
+def add_images_to(page, image_paths)
+  image_paths.each do |image_path|
+    image     = Dragonfly.app.fetch_file(image_path)
+    ref_image = Refinery::Image.create!(image: image)
+
+    Refinery::ImagePage.create!(
+      image: ref_image,
+      page:  page,
+    )
+  end
+end
+
 pages_with_body = []
 querbilder = Refinery::Page.create!(
   title:        "querbilder",
@@ -237,6 +249,13 @@ wikisigns_analog = Refinery::Page.create!(
   parent: art,
 )
 pages_with_body << wikisigns_analog
+pibel = Refinery::Page.create!(
+  title:  "pi-bel",
+  parent: art,
+)
+add_images_to(pibel, Dir["#{Rails.root.join("db/seeds/images/pi-bel")}/*.{png,jpg}"])
+pages_with_body << pibel
+
 biographie = Refinery::Page.create!(
   title:     "biographie",
   parent:    home_page,
