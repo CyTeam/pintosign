@@ -253,7 +253,8 @@ pibel = Refinery::Page.create!(
   title:  "pi-bel",
   parent: art,
 )
-add_images_to(pibel, Dir["#{Rails.root.join("db/seeds/images/pi-bel")}/*.{png,jpg}"])
+pibel_images = Dir["#{Rails.root.join("db/seeds/images/pi-bel")}/*.{png,jpg}"]
+add_images_to(pibel, pibel_images)
 pages_with_body << pibel
 
 biographie = Refinery::Page.create!(
