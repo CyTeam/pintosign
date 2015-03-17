@@ -29,6 +29,12 @@ module ApplicationHelper
     ]
   end
 
+  def side_navigation
+    presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
+
+    presenter
+  end
+
   private
 
   def images_page
