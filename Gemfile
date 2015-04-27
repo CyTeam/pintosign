@@ -44,7 +44,6 @@ group :development do
 
   # Capistrano
   gem 'capones_recipes'
-  gem 'capistrano-rbenv'
 end
 
 group :production do
