@@ -41,6 +41,10 @@ group :development do
   gem "pry-rails"
   gem "pry-byebug"
   gem "awesome_print"
+
+  # Capistrano
+  gem 'capones_recipes'
+  gem 'capistrano-rbenv'
 end
 
 group :production do
