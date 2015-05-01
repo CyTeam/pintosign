@@ -9,6 +9,10 @@ require 'capones_recipes/tasks/bluepill'
 
 load 'deploy/assets'
 
+# Ruby
+require 'capistrano-rbenv'
+set :rbenv_ruby_version, File.read('.ruby-version').strip
+
 # Staging
 set :default_stage, 'staging'
 
