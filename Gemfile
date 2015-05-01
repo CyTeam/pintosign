@@ -43,7 +43,7 @@ group :development do
   gem "awesome_print"
 
   # Capistrano
-  gem 'capones_recipes'
+  gem 'capones_recipes', '~> 1.20.1'
 end
 
 group :production do

@@ -310,7 +310,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bootstrap-sass
-  capones_recipes
+  capones_recipes (~> 1.20.1)
   coffee-rails
   font-awesome-rails
   jbuilder
