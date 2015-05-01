@@ -14,7 +14,7 @@ group :development, :test do
   gem "sqlite3"
 end
 
-gem "puma"
+gem "unicorn"
 gem "slim"
 # Use SCSS for stylesheets
 gem "sass-rails"
