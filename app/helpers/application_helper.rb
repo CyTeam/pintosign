@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def head_image
-    page_image =  Refinery::ImagePage.where(page: images_page).order("random()").first
+    page_image =  Refinery::ImagePage.where(page: images_page).order("rand()").first
 
     content_tag(:div, id: 'image', class: 'container-fluid') do
       html_content = content_tag(:div, class: 'row-fluid') do
