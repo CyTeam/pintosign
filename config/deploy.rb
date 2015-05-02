@@ -23,7 +23,7 @@ set :user, "deployer"                               # The server's user for depl
 set :shared_children, shared_children + ['tmp/sockets']
 
 # Sync directories
-set :sync_directories, ['uploads']
+set :sync_directories, ['uploads', 'system']
 set :sync_backups, 3
 
 # Configuration
