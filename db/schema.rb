@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20150215184434) do
   create_table "refinery_image_page_translations", force: :cascade do |t|
     t.integer  "refinery_image_page_id", limit: 4,     null: false
     t.string   "locale",                 limit: 255,   null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.text     "caption",                limit: 65535
   end
 
@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(version: 20150215184434) do
   create_table "refinery_page_part_translations", force: :cascade do |t|
     t.integer  "refinery_page_part_id", limit: 4,     null: false
     t.string   "locale",                limit: 255,   null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.text     "body",                  limit: 65535
   end
 
@@ -74,8 +74,8 @@ ActiveRecord::Schema.define(version: 20150215184434) do
   create_table "refinery_page_translations", force: :cascade do |t|
     t.integer  "refinery_page_id", limit: 4,   null: false
     t.string   "locale",           limit: 255, null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.string   "title",            limit: 255
     t.string   "custom_slug",      limit: 255
     t.string   "menu_title",       limit: 255
