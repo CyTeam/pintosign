@@ -14,7 +14,7 @@ group :development, :test do
   gem "sqlite3"
 end
 
-gem "puma"
+gem "unicorn"
 gem "slim"
 # Use SCSS for stylesheets
 gem "sass-rails"
@@ -43,7 +43,8 @@ group :development do
   gem "awesome_print"
 
   # Capistrano
-  gem 'capones_recipes'
+  gem 'capones_recipes', '~> 1.20.1'
+  gem 'capistrano-rbenv'
 end
 
 group :production do

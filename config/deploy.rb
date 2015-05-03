@@ -9,6 +9,10 @@ require 'capones_recipes/tasks/bluepill'
 
 load 'deploy/assets'
 
+# Ruby
+require 'capistrano-rbenv'
+set :rbenv_ruby_version, File.read('.ruby-version').strip
+
 # Staging
 set :default_stage, 'staging'
 
@@ -19,7 +23,7 @@ set :user, "deployer"                               # The server's user for depl
 set :shared_children, shared_children + ['tmp/sockets']
 
 # Sync directories
-set :sync_directories, ['uploads']
+set :sync_directories, ['uploads', 'system']
 set :sync_backups, 3
 
 # Configuration
