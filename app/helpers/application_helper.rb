@@ -44,11 +44,11 @@ module ApplicationHelper
   end
 
   def sonstiges_page
-    @sonstiges_page ||= Refinery::Page.by_title('biographie').first
+    @sonstiges_page ||= Refinery::Page.by_title('info').first
   end
 
   def biographie_page
-    @biographie_page ||= Refinery::Page.by_title('info').first
+    @biographie_page ||= Refinery::Page.by_title('biographie').first
   end
 
 
