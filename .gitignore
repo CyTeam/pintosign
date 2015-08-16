@@ -21,6 +21,7 @@ db/*.sqlite3-journal
 *.log
 tmp
 tmp/**/*
+public/assets/**/*
 
 # Documentation
 doc/api

@@ -14,7 +14,7 @@ group :development, :test do
   gem "sqlite3"
 end
 
-gem "puma"
+gem "unicorn"
 gem "slim"
 # Use SCSS for stylesheets
 gem "sass-rails"
@@ -29,8 +29,6 @@ gem "therubyracer",  platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem "jquery-rails"
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem "turbolinks"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder"
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -41,6 +39,12 @@ group :development do
   gem "pry-rails"
   gem "pry-byebug"
   gem "awesome_print"
+
+  gem "unicorn-rails"
+
+  # Capistrano
+  gem 'capones_recipes', '~> 1.20.1'
+  gem 'capistrano-rbenv'
 end
 
 group :production do
@@ -56,5 +60,5 @@ gem "quiet_assets"
 gem "refinerycms-acts-as-indexed", ["~> 2.0", ">= 2.0.0"]
 # Add support for refinerycms-wymeditor
 gem "refinerycms-wymeditor", ["~> 1.0", ">= 1.0.0"]
-gem "seo_meta",    github: "parndt/seo_meta",      branch: "master"
-gem "paper_trail", github: "airblade/paper_trail", branch: "master"
+gem "seo_meta", "~> 2.0.0.rc1"
+gem "paper_trail"

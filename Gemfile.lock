@@ -1,22 +1,4 @@
 GIT
-  remote: git://github.com/airblade/paper_trail.git
-  revision: ee7eb24df3f14a651157d29a2a61fcea6a1573da
-  branch: master
-  specs:
-    paper_trail (4.0.0.beta3)
-      activerecord (>= 3.0, < 6.0)
-      activesupport (>= 3.0, < 6.0)
-      request_store (~> 1.1.0)
-
-GIT
-  remote: git://github.com/parndt/seo_meta.git
-  revision: c575efda84bb775694c32b13f9b446265c6b1e33
-  branch: master
-  specs:
-    seo_meta (2.0.0.rc.1)
-      railties (>= 3.0.0)
-
-GIT
   remote: git://github.com/raskhadafi/refinerycms.git
   revision: 9390f26348a1fc525d3c74b830536ad4abd04a8f
   branch: patch-1
@@ -81,45 +63,45 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.2.0)
-      actionpack (= 4.2.0)
-      actionview (= 4.2.0)
-      activejob (= 4.2.0)
+    actionmailer (4.2.3)
+      actionpack (= 4.2.3)
+      actionview (= 4.2.3)
+      activejob (= 4.2.3)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (4.2.0)
-      actionview (= 4.2.0)
-      activesupport (= 4.2.0)
-      rack (~> 1.6.0)
+    actionpack (4.2.3)
+      actionview (= 4.2.3)
+      activesupport (= 4.2.3)
+      rack (~> 1.6)
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
-      rails-html-sanitizer (~> 1.0, >= 1.0.1)
-    actionview (4.2.0)
-      activesupport (= 4.2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (4.2.3)
+      activesupport (= 4.2.3)
       builder (~> 3.1)
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
-      rails-html-sanitizer (~> 1.0, >= 1.0.1)
-    activejob (4.2.0)
-      activesupport (= 4.2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    activejob (4.2.3)
+      activesupport (= 4.2.3)
       globalid (>= 0.3.0)
-    activemodel (4.2.0)
-      activesupport (= 4.2.0)
+    activemodel (4.2.3)
+      activesupport (= 4.2.3)
       builder (~> 3.1)
-    activerecord (4.2.0)
-      activemodel (= 4.2.0)
-      activesupport (= 4.2.0)
+    activerecord (4.2.3)
+      activemodel (= 4.2.3)
+      activesupport (= 4.2.3)
       arel (~> 6.0)
-    activesupport (4.2.0)
+    activesupport (4.2.3)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     acts_as_indexed (0.8.3)
-    addressable (2.3.7)
-    arel (6.0.0)
-    autoprefixer-rails (5.1.7)
+    addressable (2.3.8)
+    arel (6.0.3)
+    autoprefixer-rails (5.1.11)
       execjs
       json
     awesome_nested_set (3.0.2)
@@ -127,23 +109,42 @@ GEM
     awesome_print (1.6.1)
     babosa (1.0.2)
     bcrypt (3.1.10)
-    bootstrap-sass (3.3.3)
+    bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
-    byebug (4.0.1)
+    byebug (4.0.5)
       columnize (= 0.9.0)
-      rb-readline (= 0.5.2)
+    cap-recipes (0.3.39)
+    capistrano (2.15.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    capistrano-ext (1.2.1)
+      capistrano (>= 1.0.0)
+    capistrano-platform-resources (0.1.3)
+      capistrano (< 3)
+    capistrano-rbenv (1.0.5)
+      capistrano (< 3)
+      capistrano-platform-resources (>= 0.1.3)
+    capistrano_colors (0.5.5)
+    capones_recipes (1.20.1)
+      cap-recipes
+      capistrano (~> 2.0)
+      capistrano-ext
+      capistrano_colors
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
-    coffee-script (2.3.0)
+    coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.9.1.1)
     columnize (0.9.0)
-    decorators (2.0.0)
+    decorators (2.0.1)
       railties (>= 4.0.0, < 5.0.0)
     devise (3.4.1)
       bcrypt (~> 3.0)
@@ -152,24 +153,24 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    dragonfly (1.0.7)
+    dragonfly (1.0.9)
       addressable (~> 2.3)
       multi_json (~> 1.0)
       rack
     erubis (2.7.0)
-    execjs (2.4.0)
+    execjs (2.5.2)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    globalid (0.3.3)
+    globalid (0.3.6)
       activesupport (>= 4.1.0)
     globalize (5.0.1)
       activemodel (>= 4.2.0, < 4.3)
       activerecord (>= 4.2.0, < 4.3)
-    hike (1.2.3)
+    highline (1.7.2)
     i18n (0.7.0)
-    jbuilder (2.2.11)
+    jbuilder (2.2.13)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.3)
@@ -178,21 +179,32 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.3)
       railties (>= 3.2.16)
-    json (1.8.2)
-    libv8 (3.16.14.7)
-    loofah (2.0.1)
+    json (1.8.3)
+    kgio (2.9.3)
+    libv8 (3.16.14.11)
+    loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
-    mime-types (2.4.3)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.5.1)
+    minitest (5.8.0)
     multi_json (1.11.0)
     mysql2 (0.3.18)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    paper_trail (3.0.8)
+      activerecord (>= 3.0, < 5.0)
+      activesupport (>= 3.0, < 5.0)
     pg (0.18.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -201,31 +213,29 @@ GEM
     pry-byebug (3.1.0)
       byebug (~> 4.0)
       pry (~> 0.10)
-    pry-rails (0.3.3)
+    pry-rails (0.3.4)
       pry (>= 0.9.10)
-    puma (2.11.1)
-      rack (>= 1.1, < 2.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.6.0)
+    rack (1.6.4)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (4.2.0)
-      actionmailer (= 4.2.0)
-      actionpack (= 4.2.0)
-      actionview (= 4.2.0)
-      activejob (= 4.2.0)
-      activemodel (= 4.2.0)
-      activerecord (= 4.2.0)
-      activesupport (= 4.2.0)
+    rails (4.2.3)
+      actionmailer (= 4.2.3)
+      actionpack (= 4.2.3)
+      actionview (= 4.2.3)
+      activejob (= 4.2.3)
+      activemodel (= 4.2.3)
+      activerecord (= 4.2.3)
+      activesupport (= 4.2.3)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.2.0)
+      railties (= 4.2.3)
       sprockets-rails
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.5)
+    rails-dom-testing (1.0.7)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
@@ -234,29 +244,28 @@ GEM
     rails-i18n (4.0.4)
       i18n (~> 0.6)
       railties (~> 4.0)
-    railties (4.2.0)
-      actionpack (= 4.2.0)
-      activesupport (= 4.2.0)
+    railties (4.2.3)
+      actionpack (= 4.2.3)
+      activesupport (= 4.2.3)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    raindrops (0.13.0)
     rake (10.4.2)
-    rb-readline (0.5.2)
     rdoc (4.2.0)
-    ref (1.0.5)
+    ref (2.0.0)
     refinerycms-acts-as-indexed (2.0.1)
       acts_as_indexed (~> 0.8.0)
       decorators (~> 2.0.0)
       refinerycms-core (~> 3.0.0)
     refinerycms-wymeditor (1.0.6)
       refinerycms-core (~> 3.0, >= 3.0.0)
-    request_store (1.1.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     routing-filter (0.5.0)
       actionpack (~> 4.2)
       activesupport (~> 4.2)
-    sass (3.4.13)
-    sass-rails (5.0.1)
+    sass (3.4.16)
+    sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
@@ -265,36 +274,40 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    slim (3.0.3)
+    seo_meta (2.0.0.rc.1)
+      railties (>= 3.0.0)
+    slim (3.0.6)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
     slop (3.6.0)
-    spring (1.3.3)
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    spring (1.3.5)
+    sprockets (3.3.1)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.4)
+    sprockets-rails (2.3.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
-    temple (0.7.5)
-    therubyracer (0.12.1)
+    temple (0.7.6)
+    therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
     truncate_html (0.9.3)
-    turbolinks (2.5.3)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicorn (4.9.0)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    unicorn-rails (2.2.0)
+      rack
+      unicorn
     warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.7)
@@ -305,16 +318,17 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bootstrap-sass
+  capistrano-rbenv
+  capones_recipes (~> 1.20.1)
   coffee-rails
   font-awesome-rails
   jbuilder
   jquery-rails
   mysql2
-  paper_trail!
+  paper_trail
   pg
   pry-byebug
   pry-rails
-  puma
   quiet_assets
   rack-cache
   rails (~> 4.2.0)
@@ -325,10 +339,14 @@ DEPENDENCIES
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   sass-rails
   sdoc (~> 0.4.0)
-  seo_meta!
+  seo_meta (~> 2.0.0.rc1)
   slim
   spring
   sqlite3
   therubyracer
-  turbolinks
   uglifier
+  unicorn
+  unicorn-rails
+
+BUNDLED WITH
+   1.10.6
