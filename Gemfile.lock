@@ -305,6 +305,9 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    unicorn-rails (2.2.0)
+      rack
+      unicorn
     warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.7)
@@ -343,6 +346,7 @@ DEPENDENCIES
   therubyracer
   uglifier
   unicorn
+  unicorn-rails
 
 BUNDLED WITH
    1.10.6

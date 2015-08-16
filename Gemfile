@@ -40,6 +40,8 @@ group :development do
   gem "pry-byebug"
   gem "awesome_print"
 
+  gem "unicorn-rails"
+
   # Capistrano
   gem 'capones_recipes', '~> 1.20.1'
   gem 'capistrano-rbenv'
